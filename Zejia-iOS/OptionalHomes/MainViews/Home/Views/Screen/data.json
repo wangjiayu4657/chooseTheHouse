@@ -1,0 +1,220 @@
+[
+ {
+ "Type": "家庭成员(未来家里居住的成员)",
+ "Items": [
+           {
+           "Item_Title": "我"
+           },
+           {
+           "Item_Title": "伴侣"
+           },
+           {
+           "Item_Title": "孩子"
+           },
+           {
+           "Item_Title": "老人"
+           }]
+ },
+ {
+ "Type": "家庭生活(在社区周边经常做的事)",
+ "Items": [
+           {
+           "Item_Title": "买菜买水果"
+           },
+           {
+           "Item_Title": "散步"
+           },
+           {
+           "Item_Title": "遛狗"
+           },
+           {
+           "Item_Title": "叫外卖"
+           },
+           {
+           "Item_Title": "逛街购物"
+           },
+           {
+           "Item_Title": "健身"
+           },
+           {
+           "Item_Title": "打羽毛球"
+           },
+           {
+           "Item_Title": "看电影"
+           },
+           {
+           "Item_Title": "聚会"
+           },
+           {
+           "Item_Title": "撸串"
+           } ]
+ },
+ {
+ "Type": "社区属性(社区内部相关特色)",
+ "Items": [
+           {
+           "Item_Title": "品牌开发商"
+           },
+           {
+           "Item_Title": "品牌物业"
+           },
+           {
+           "Item_Title": "车位充足"
+           },
+           {
+           "Item_Title": "学区房"
+           },
+           {
+           "Item_Title": "地铁房"
+           },
+           {
+           "Item_Title": "不要动迁房"
+           },
+           {
+           "Item_Title": "不要老公房"
+           }]
+ },
+ {
+ "Type": "基础设施(社区1km 内基础设施)",
+ "Items": [
+           {
+           "Item_Title": "菜场"
+           },
+           {
+           "Item_Title": "便利店"
+           },
+           {
+           "Item_Title": "中型超市"
+           },
+           {
+           "Item_Title": "咖啡店"
+           },
+           {
+           "Item_Title": "邮局"
+           },
+           {
+           "Item_Title": "银行"
+           },
+           {
+           "Item_Title": "街道医院"
+           },
+           {
+           "Item_Title": "餐厅"
+           } ]
+ },
+ {
+ "Type": "社区配套(社区3km 内大型设施)",
+ "Items": [
+           {
+           "Item_Title": "大型超市"
+           },
+           {
+           "Item_Title": "幼儿园"
+           },
+           {
+           "Item_Title": "三甲医院"
+           },
+           {
+           "Item_Title": "商圈"
+           },
+           {
+           "Item_Title": "公园"
+           },
+           {
+           "Item_Title": "地铁站"
+           },
+           {
+           "Item_Title": "中小学"
+           }]
+ },
+ {
+ "Type": "户型",
+ "Items": [
+           {
+           "Item_Title": "一室"
+           },
+           {
+           "Item_Title": "二室"
+           },
+           {
+           "Item_Title": "三室户"
+           },
+           {
+           "Item_Title": "四室及以上"
+           }]
+ },
+ {
+ "Type": "房屋类型",
+ "Items": [
+           {
+           "Item_Title": "普通住宅"
+           },
+           {
+           "Item_Title": "商住两用"
+           },
+           {
+           "Item_Title": "别墅"
+           },
+           {
+           "Item_Title": "不限"
+           }]
+ },
+ {
+ "Type": "建筑年代",
+ "Items": [
+           {
+           "Item_Title": "不限"
+           },
+           {
+           "Item_Title": "2年内"
+           },
+           {
+           "Item_Title": "5年内"
+           },
+           {
+           "Item_Title": "十年内"
+           }]
+ },
+ {
+ "Type": "面积",
+ "Items": [
+           {
+           "Item_Title": "50平一下"
+           },
+           {
+           "Item_Title": "50-70平"
+           },
+           {
+           "Item_Title": "70-90平"
+           },
+           {
+           "Item_Title": "90-110平"
+           },
+           {
+           "Item_Title": "110-130平"
+           },
+           {
+           "Item_Title": "130-150平"
+           },
+           {
+           "Item_Title": "150-200平"
+           },
+           {
+           "Item_Title": "200平以上"
+           }]
+ },
+ {
+ "Type": "房本年限",
+ "Items": [
+           {
+           "Item_Title": "满五唯一"
+           },
+           {
+           "Item_Title": "满五"
+           },
+           {
+           "Item_Title": "满二"
+           },
+           ]
+ },
+ ]

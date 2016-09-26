@@ -1,0 +1,129 @@
+{
+         "Area": [
+                  {
+                  "Item_Title": "不限",
+                  "Item_Id": ""
+                  },
+                   {
+                   "Item_Title": "浦东",
+                   "Item_Id": "25"
+                   },
+                   {
+                   "Item_Title": "闵行",
+                   "Item_Id": "18"
+                   },
+                   {
+                   "Item_Title": "宝山",
+                   "Item_Id": "30"
+                   },
+                   {
+                   "Item_Title": "徐汇",
+                   "Item_Id": "19"
+                   },
+                   {
+                   "Item_Title": "普陀",
+                   "Item_Id": "28"
+                   },
+                   {
+                   "Item_Title": "杨浦",
+                   "Item_Id": "26"
+                   },
+                   {
+                   "Item_Title": "长宁",
+                   "Item_Id": "20"
+                   },
+                   {
+                   "Item_Title": "松江",
+                   "Item_Id": "586"
+                   },
+                   {
+                   "Item_Title": "嘉定",
+                   "Item_Id": "29"
+                   },
+                   {
+                   "Item_Title": "黄浦",
+                   "Item_Id": "24"
+                   },
+                   {
+                   "Item_Title": "静安",
+                   "Item_Id": "21"
+                   }, {
+                   "Item_Title": "闸北",
+                   "Item_Id": "27"
+                   }, {
+                   "Item_Title": "虹口",
+                   "Item_Id": "23"
+                   }, {
+                   "Item_Title": "青浦",
+                   "Item_Id": "31"
+                   },{
+                   "Item_Title": "奉贤",
+                   "Item_Id": "32"
+                   },{
+                   "Item_Title": "金山",
+                   "Item_Id": "35"
+                   },{
+                   "Item_Title": "崇明",
+                   "Item_Id": "996"
+                   }],
+    
+
+         "Price": [
+                   {
+                   "Item_Title": "不限",
+                   "Item_Id": ""
+                   },
+                   {
+                   "Item_Title": "100万以下",
+                   "Item_Id": "1"
+                   },
+                   {
+                   "Item_Title": "100－150万",
+                   "Item_Id": "2"
+                   },
+                   {
+                   "Item_Title": "150-200万",
+                   "Item_Id": "3"
+                   },
+                   {
+                   "Item_Title": "200-300万",
+                   "Item_Id": "4"
+                   },
+                   {
+                   "Item_Title": "300-500万",
+                   "Item_Id": "5"
+                   },
+                   {
+                   "Item_Title": "500-800万",
+                   "Item_Id": "6"
+                   },
+                   {
+                   "Item_Title": "800-1000万",
+                   "Item_Id": "7"
+                   },
+                   {
+                   "Item_Title": "1000万以上",
+                   "Item_Id": "8"
+                   }
+                   ],
+
+         "Intelligent": [
+                   {
+                   "Item_Title": "智能排序",
+                   "Item_Id": "1"
+                   },
+                   {
+                   "Item_Title": "在售房源数从多到少",
+                   "Item_Id": "2"
+                   },
+                   {
+                   "Item_Title": "均价从高到低",
+                   "Item_Id": "3"
+                   },
+                   {
+                   "Item_Title": "均价从低到高",
+                   "Item_Id": "4"
+                   }
+                   ]
+
+}

@@ -1,0 +1,161 @@
+//
+//  OptionalHomePchFile.pch
+//  OptionalHome
+//
+//  Created by haili on 16/7/26.
+//  Copyright © 2016年 haili. All rights reserved.
+//
+
+#ifndef OptionalHomePchFile_pch
+#define OptionalHomePchFile_pch
+
+#import "OHFont.h"
+#import "OHCommon.h"
+#import "UIImageView+WebCache.h"
+#import "AFServer.h"
+#import "MBProgressHUD.h"
+#import "UIImage+OHImage.h"
+#import "UIView+OHUIview_Extra.h"
+#import "Singleton.h"
+#import "MJExtension.h"
+#include "OHConst.h"
+#import "OHWebHeader.h"
+#import "XXReporter.h"
+
+#define UM_Appkey           @"563812f6e0f55a58d30020f7"             //友盟AppKey
+#define Tencent_AppID       @"1105531815"                           //QQ_AppID
+#define Tencent_AppID_16    @"41E513A7"                             //QQ_APPID_16进制
+#define Tencent_AppKey      @"txHBtqETx6sBuVRB"                     //QQ_AppKey
+#define Sina_AppKey         @"742880904"                            //新浪微博AppKey
+#define Sina_AppSecret      @"734910af7e4863092b7bfc0d17441024"     //新浪微博AppSecret
+#define WeChat_AppID        @"wx82fa9c841fcad712"                   //微信appid
+#define WeChat_AppSecret    @"6840ef4e0e8dd3a5210d31864eaa8367"     //长度32位 用户获取access_token
+#define KBaiDuMapKey        @"pbDRGitnySBYSkiwaD7uRqIHhfXqx6U4"     //百度地图Key
+
+
+//通知名称
+#define SinaLoginSuccess    @"SinaLoginSuccess"                     //新浪微博登录成功后的通知
+#define SinaBindSuccess     @"SinaBindSuccess"                      //新浪微博绑定成功后的通知
+#define WechatLoginSuccess  @"WechatLoginSuccess"                   //微信登录成功后的通知
+#define WeChatBindSuccess   @"WeChatBindSuccess"                    //微信绑定成功后的通知
+#define CancelFollowSuccess @"CancelFollowSuccess"                  //取消关注成功通知
+
+//当前位置经纬度
+#define KLATITUDE [[NSUserDefaults standardUserDefaults] valueForKey:@"latitude"]       //纬度
+#define KLONGITUDE [[NSUserDefaults standardUserDefaults] valueForKey:@"longitude"]     //经度
+
+//AppStore下载地址
+#define AppStoreURL @"https://itunes.apple.com/zh/app/ze-jia/id1139080762?l=zh&ls=1&mt=8"
+//获取网络状态（NotReachable:没网、ReachableViaWWAN:手机网络、ReachableViaWiFi:wifi网络）
+#define GetNetState [[NSUserDefaults standardUserDefaults] valueForKey:@"isNetwork"]
+
+//获取版本号
+#define INTERFACE_VER  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+//平台系统版本号
+#define INTERFACE_OS  [[UIDevice currentDevice] systemVersion]
+//渠道号
+#define INTERFACE_CHANNEL @"1"
+//设备号
+#define INTERFACE_DEVICETOKEN @""
+//平台
+#define INTERFACE_PLAT @"ios"
+//语言
+#define INTERFACE_LANGUAGE @"zh"
+
+//接口http
+#define KFormalEnvironment  @"http://www.51zejia.com/"
+#define KTestEnvironment    @"http://10.0.60.135/"
+//接口版本
+#define KVersion  @"1.0"
+//接口URL
+#define BasicURL  [NSString stringWithFormat:@"%@api/%@/",KFormalEnvironment,KVersion]
+#define HBasicURL [NSString stringWithFormat:@"%@",KFormalEnvironment]
+
+
+//导航栏高度
+#define kNaviHeight     64.0
+//导航的标题或按钮的高度
+#define kNaviBarHeight  44.0
+//状态栏高度
+#define kStatusHeight   20.0
+//获取设备的物理高度
+#define OHScreenH [UIScreen mainScreen].bounds.size.height
+//获取设备的物理宽度
+#define OHScreenW [UIScreen mainScreen].bounds.size.width
+//适配系数（以iPhone6尺寸为基准）
+#define kAdaptationCoefficient ([[UIScreen mainScreen] bounds].size.width)/375.0
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+
+/****************************************************
+ 对象有效性宏定义
+ *****************************************************/
+
+// 如果obj为nil或者null，返回@""、@[]或者@{}，否则返回原样返回obj
+// 主要是用在setObject:forKey:或者打印NSString的时候
+#define VALID_STRING(obj)                           ([obj isKindOfClass:[NSString class]] ? obj : @"")
+#define VALID_ARRAY(obj)                            ([obj isKindOfClass:[NSArray class]] ? obj : @[])
+#define VALID_DICTIONARY(obj)                       ([obj isKindOfClass:[NSDictionary class]] ? obj : @{})
+
+/****************************************************
+ 对象有效性宏定义 - End
+ *****************************************************/
+
+#define IS_iPhone5                  ([UIScreen mainScreen].bounds.size.height == 568 && [UIScreen mainScreen].bounds.size.width == 320)
+#define IS_iPhone_6                 ([UIScreen mainScreen].bounds.size.height == 667 && [UIScreen mainScreen].bounds.size.width == 375)
+#define IS_iPhone_6p                ([UIScreen mainScreen].bounds.size.height == 736 && [UIScreen mainScreen].bounds.size.width == 414)
+
+
+/**
+ *  颜色
+ */
+#define OHColor(R, G, B, a) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:a]
+
+//app主色调
+#define kOHThemeColor OHColor(251, 229, 88, 1.0)
+//文字默认颜色
+#define kLabelDefaultColor OHColor(51, 51, 51, 1)
+
+//可点击按钮背景色
+#define kButtonEnableClick_BackgroundColor OHColor(251, 229, 88, 1.0)
+
+//可点击按钮标题颜色
+#define kButtonEnableClick_TitleColor OHColor(105, 49, 25, 1.0)
+
+//不可点击按钮背景色
+#define kButtonNotEnableClick_BackgroundColor OHColor(221, 221, 221, 1.0)
+
+//不可点击按钮标题颜色
+#define kButtonNotEnableClick_TitleColor OHColor(160, 160, 160, 1.0)
+
+
+//是否进入列表首页（1进首页，0进标签选择）
+#define kInHome [[NSUserDefaults standardUserDefaults] valueForKey:@"InHome"]
+//用户SessionId
+#define kSessionId [[NSUserDefaults standardUserDefaults] valueForKey:@"SessionId"]
+//用户昵称
+#define kNickName [[NSUserDefaults standardUserDefaults] valueForKey:@"NickName"]
+//用户头像
+#define kAvaterUrl [[NSUserDefaults standardUserDefaults] valueForKey:@"AvaterUrl"]
+//用户手机号
+#define kMobile [[NSUserDefaults standardUserDefaults] valueForKey:@"Mobile"]
+
+
+//从服务端获取到的app版本号
+#define kAppVersion [[NSUserDefaults standardUserDefaults] valueForKey:@"appVersion"]
+//标签版本号
+#define kTagVersion [[NSUserDefaults standardUserDefaults] valueForKey:@"tagVersion"]
+//筛选条件版本号
+#define kFilterVersion [[NSUserDefaults standardUserDefaults] valueForKey:@"filterVersion"]
+
+
+//G－C－D
+#define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+#define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
+
+#endif /* OptionalHomePchFile_pch */
